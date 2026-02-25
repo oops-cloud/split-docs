@@ -12,59 +12,68 @@
     "light": "#6ee7b7",
     "dark": "#059669"
   },
-  "navbar": {
+  "topbar": {
     "links": [
       {
-        "label": "Launch App",
+        "label": "App",
         "href": "https://splt.fun"
+      },
+      {
+        "label": "Twitter",
+        "href": "https://x.com/spltdotfun"
       }
     ],
-    "primary": {
-      "type": "button",
+    "cta": {
       "label": "Launch Token",
       "href": "https://splt.fun/launch"
     }
   },
-  "sidebar": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        "introduction/what-is-split",
-        "introduction/why-split",
-        "introduction/quickstart"
-      ]
-    },
-    {
-      "group": "Core Concepts",
-      "pages": [
-        "concepts/fee-distribution",
-        "concepts/hold-time-multiplier",
-        "concepts/bonding-curve",
-        "concepts/graduation"
-      ]
-    },
-    {
-      "group": "Guides",
-      "pages": [
-        "guides/launch-a-token",
-        "guides/buying-and-selling",
-        "guides/claiming-rewards",
-        "guides/portfolio"
-      ]
-    },
-    {
-      "group": "Infrastructure",
-      "pages": [
-        "infrastructure/architecture",
-        "infrastructure/crank-service",
-        "infrastructure/contract-addresses"
-      ]
-    }
-  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction/what-is-split",
+              "introduction/why-split",
+              "introduction/quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/fee-distribution",
+              "concepts/hold-time-multiplier",
+              "concepts/bonding-curve",
+              "concepts/graduation"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/launch-a-token",
+              "guides/buying-and-selling",
+              "guides/claiming-rewards",
+              "guides/portfolio"
+            ]
+          },
+          {
+            "group": "Infrastructure",
+            "pages": [
+              "infrastructure/architecture",
+              "infrastructure/crank-service",
+              "infrastructure/contract-addresses"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "footer": {
     "socials": {
-      "x": "https://x.com/splitprotocol",
-      "github": "https://github.com/splitprotocol"
+      "x": "https://x.com/spltdotfun"
     }
   }
 }

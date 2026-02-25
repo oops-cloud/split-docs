@@ -12,20 +12,7 @@
     "light": "#6ee7b7",
     "dark": "#059669"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Launch App",
-        "href": "https://splt.fun"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Launch Token",
-      "href": "https://splt.fun/launch"
-    }
-  },
-  "sidebar": [
+  "navigation": [
     {
       "group": "Getting Started",
       "pages": [

@@ -1,7 +1,7 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Split Protocol",
+  "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
+  "name": "Split Protocol",
   "logo": {
     "dark": "/logo/split-logo-white.png",
     "light": "/logo/split-logo-dark.png"
@@ -10,41 +10,22 @@
   "colors": {
     "primary": "#34d399",
     "light": "#6ee7b7",
-    "dark": "#059669",
-    "anchors": {
-      "from": "#34d399",
-      "to": "#059669"
+    "dark": "#059669"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Launch App",
+        "href": "https://splt.fun"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Launch Token",
+      "href": "https://splt.fun/launch"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Launch App",
-      "url": "https://splt.fun"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Launch Token",
-    "url": "https://splt.fun/launch"
-  },
-  "tabs": [],
-  "anchors": [
-    {
-      "name": "App",
-      "icon": "rocket",
-      "url": "https://splt.fun"
-    },
-    {
-      "name": "GitHub",
-      "icon": "github",
-      "url": "https://github.com/splitprotocol"
-    },
-    {
-      "name": "Twitter",
-      "icon": "x-twitter",
-      "url": "https://x.com/splitprotocol"
-    }
-  ],
-  "navigation": [
+  "sidebar": [
     {
       "group": "Getting Started",
       "pages": [
@@ -80,8 +61,10 @@
       ]
     }
   ],
-  "footerSocials": {
-    "x": "https://x.com/splitprotocol",
-    "github": "https://github.com/splitprotocol"
+  "footer": {
+    "socials": {
+      "x": "https://x.com/splitprotocol",
+      "github": "https://github.com/splitprotocol"
+    }
   }
 }

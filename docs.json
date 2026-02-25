@@ -1,6 +1,7 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "Split Protocol",
+  "theme": "mint",
   "logo": {
     "dark": "/logo/split-logo-white.png",
     "light": "/logo/split-logo-dark.png"

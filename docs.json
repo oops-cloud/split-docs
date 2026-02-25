@@ -16,11 +16,13 @@
     "links": [
       {
         "label": "App",
-        "href": "https://splt.fun"
+        "href": "https://splt.fun",
+        "icon": "globe"
       },
       {
         "label": "Twitter",
-        "href": "https://x.com/spltdotfun"
+        "href": "https://x.com/spltdotfun",
+        "icon": "x-twitter"
       }
     ],
     "primary": {
@@ -28,6 +30,9 @@
       "label": "Launch Token",
       "href": "https://splt.fun/launch"
     }
+  },
+  "assistant": {
+    "enabled": false
   },
   "navigation": {
     "tabs": [

@@ -12,42 +12,44 @@
     "light": "#6ee7b7",
     "dark": "#059669"
   },
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        "introduction/what-is-split",
-        "introduction/why-split",
-        "introduction/quickstart"
-      ]
-    },
-    {
-      "group": "Core Concepts",
-      "pages": [
-        "concepts/fee-distribution",
-        "concepts/hold-time-multiplier",
-        "concepts/bonding-curve",
-        "concepts/graduation"
-      ]
-    },
-    {
-      "group": "Guides",
-      "pages": [
-        "guides/launch-a-token",
-        "guides/buying-and-selling",
-        "guides/claiming-rewards",
-        "guides/portfolio"
-      ]
-    },
-    {
-      "group": "Infrastructure",
-      "pages": [
-        "infrastructure/architecture",
-        "infrastructure/crank-service",
-        "infrastructure/contract-addresses"
-      ]
-    }
-  ],
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "introduction/what-is-split",
+          "introduction/why-split",
+          "introduction/quickstart"
+        ]
+      },
+      {
+        "group": "Core Concepts",
+        "pages": [
+          "concepts/fee-distribution",
+          "concepts/hold-time-multiplier",
+          "concepts/bonding-curve",
+          "concepts/graduation"
+        ]
+      },
+      {
+        "group": "Guides",
+        "pages": [
+          "guides/launch-a-token",
+          "guides/buying-and-selling",
+          "guides/claiming-rewards",
+          "guides/portfolio"
+        ]
+      },
+      {
+        "group": "Infrastructure",
+        "pages": [
+          "infrastructure/architecture",
+          "infrastructure/crank-service",
+          "infrastructure/contract-addresses"
+        ]
+      }
+    ]
+  },
   "footer": {
     "socials": {
       "x": "https://x.com/splitprotocol",

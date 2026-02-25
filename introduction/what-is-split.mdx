@@ -1,0 +1,55 @@
+---
+title: "What is Split?"
+description: "A Solana token launchpad where trading fees reward holders."
+---
+
+Split is a token launchpad on Solana where **every trade pays every holder**. 1.3% of every trade is distributed directly to token holders — weighted by balance and hold duration.
+
+Creators earn more by holding than by selling. Holders earn real yield just by being holders. The incentives are aligned from the first trade.
+
+<CardGroup cols={2}>
+  <Card title="Holders Earn" icon="coins">
+    1.3% of every buy and sell flows to all token holders automatically. No staking, no lockups — just hold the token.
+  </Card>
+  <Card title="Diamond Hands Win" icon="gem">
+    A hold-time multiplier scales from 1× to 5× over 30 days, giving long-term holders a proportionally larger share of fees.
+  </Card>
+  <Card title="Creators Are Holders" icon="handshake">
+    Creators don't get special allocations. They earn the same way everyone else does — by holding.
+  </Card>
+  <Card title="Built on Meteora" icon="rocket">
+    Tokens launch on Meteora's Dynamic Bonding Curve with immediate trading and graduate to a locked liquidity pool at 85 SOL.
+  </Card>
+</CardGroup>
+
+## Fee breakdown
+
+Every trade on a Split token incurs a 2% fee, distributed as follows:
+
+| Recipient | Share | Description |
+|-----------|-------|-------------|
+| **Token holders** | 1.3% | Distributed proportionally by balance × hold-time multiplier |
+| **Protocol treasury** | 0.3% | Funds Split Protocol development and operations |
+| **Meteora** | 0.4% | AMM infrastructure fee |
+
+## How fees reach holders
+
+Fees don't require manual distribution or staking. An automated **crank service** runs continuously in the background:
+
+```
+Trade happens on any DEX
+        ↓
+Meteora collects 2% fee, holds 1.6% as partner share
+        ↓
+Crank claims partner fees from Meteora (~every 60s)
+        ↓
+Crank splits: 81.25% → holder vault, 18.75% → protocol treasury
+        ↓
+Holder vault updates reward-per-share for all holders
+        ↓
+Holders claim SOL rewards at any time from Portfolio
+```
+
+<Info>
+  Split Protocol is live on Solana mainnet at [splt.fun](https://splt.fun). All tokens launched through Split get a branded address ending in `SpLt`.
+</Info>

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Split Protocol",
+  "logo": {
+    "dark": "/logo/split-logo-white.png",
+    "light": "/logo/split-logo-dark.png"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#34d399",
+    "light": "#6ee7b7",
+    "dark": "#059669",
+    "anchors": {
+      "from": "#34d399",
+      "to": "#059669"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Launch App",
+      "url": "https://splt.fun"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Launch Token",
+    "url": "https://splt.fun/launch"
+  },
+  "tabs": [],
+  "anchors": [
+    {
+      "name": "App",
+      "icon": "rocket",
+      "url": "https://splt.fun"
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/splitprotocol"
+    },
+    {
+      "name": "Twitter",
+      "icon": "x-twitter",
+      "url": "https://x.com/splitprotocol"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "introduction/what-is-split",
+        "introduction/why-split",
+        "introduction/quickstart"
+      ]
+    },
+    {
+      "group": "Core Concepts",
+      "pages": [
+        "concepts/fee-distribution",
+        "concepts/hold-time-multiplier",
+        "concepts/bonding-curve",
+        "concepts/graduation"
+      ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "guides/launch-a-token",
+        "guides/buying-and-selling",
+        "guides/claiming-rewards",
+        "guides/portfolio"
+      ]
+    },
+    {
+      "group": "Infrastructure",
+      "pages": [
+        "infrastructure/architecture",
+        "infrastructure/crank-service",
+        "infrastructure/contract-addresses"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/splitprotocol",
+    "github": "https://github.com/splitprotocol"
+  }
+}

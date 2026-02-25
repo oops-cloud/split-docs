@@ -1,0 +1,27 @@
+---
+title: "Crank Service"
+description: "Automated fee collection and distribution."
+---
+
+Node.js on Railway. Runs every ~60s per pool:
+```
+1. Check/init reward state
+2. Skip if no fees
+3. Scan holders on-chain
+4. Register new holders (2/tx)
+5. Update all holders (4/tx)
+6. Claim from Meteora
+7. Deposit 81.25% to vault
+8. Transfer 18.75% to treasury
+```
+
+<Warning>
+  Update all holders before depositing. Deposit changes reward-per-share — stale data means wrong distribution.
+</Warning>
+
+## CLI
+```bash
+node crank.js                       # All pools, once
+node crank.js --loop --interval 60  # Loop
+node crank.js --mint <address>      # One token
+```

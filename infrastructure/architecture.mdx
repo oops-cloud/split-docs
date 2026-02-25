@@ -1,0 +1,44 @@
+---
+title: "Architecture"
+description: "System overview."
+---
+
+```
+  Users (Phantom, Solflare, etc.)
+        |
+  splt.fun (Vercel)  +  External DEXes (Jupiter, etc.)
+        |                       |
+        v                       v
+  Solana: Meteora DBC  +  Split Rewards Program
+        |                       |
+        v                       v
+  Crank Service (Railway, Node.js)
+    1. Claim fees from Meteora
+    2. Register + update holders
+    3. Deposit 81.25% to reward vault
+    4. Transfer 18.75% to treasury
+```
+
+## Trade to reward
+
+```
+1 SOL buy -> 0.02 SOL fee
+  0.008 -> Meteora
+  0.012 -> partner pool
+    -> crank claims (~60s)
+    -> 0.00975 to holder vault
+    -> 0.00225 to treasury
+    -> all holders' claimable increases
+    -> holder claims from Portfolio
+```
+
+## Stack
+
+| Component | Tech | Host |
+|-----------|------|------|
+| Frontend | React | Vercel |
+| Contracts | Anchor/Rust | Solana |
+| Crank | Node.js | Railway |
+| Metadata | CF Worker | Cloudflare |
+| Vanity keys | Express | Railway |
+| RPC | Helius | 50 req/s |

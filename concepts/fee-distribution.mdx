@@ -1,0 +1,33 @@
+---
+title: "Fee Distribution"
+description: "How fees flow from trades to holders."
+---
+
+Every trade pays a 2% fee. 1.3% goes to all holders.
+
+## Flow
+
+1. Trade happens (any DEX)
+2. Meteora collects 2%, holds 1.6% as partner share
+3. Crank claims partner fees every ~60s
+4. Crank updates all holders' effective shares
+5. 81.25% of claimed fees deposited to reward vault
+6. 18.75% sent to protocol treasury
+7. Holders claim SOL from Portfolio
+
+## Reward math
+
+```
+unclaimed = pendingRewards + ((effectiveShares x accRewardPerShare / 1e12) - rewardDebt)
+effectiveShares = balance x holdTimeMultiplier
+```
+
+The vault's reward-per-share increases with each deposit, proportionally increasing every holder's claimable amount.
+
+<Warning>
+  All holders must be updated before fees are deposited. This prevents stale share data from skewing distribution.
+</Warning>
+
+## Works everywhere
+
+Fees come from all trades — splt.fun, Jupiter, Axiom, Photon, or any DEX routing through the Meteora pool. External traders are auto-registered by the crank.

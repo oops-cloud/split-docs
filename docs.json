@@ -12,49 +12,55 @@
     "light": "#6ee7b7",
     "dark": "#059669"
   },
-  "navigation": {
-    "tabs": [
+  "navbar": {
+    "links": [
       {
-        "tab": "Documentation",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "introduction/what-is-split",
-              "introduction/why-split",
-              "introduction/quickstart"
-            ]
-          },
-          {
-            "group": "Core Concepts",
-            "pages": [
-              "concepts/fee-distribution",
-              "concepts/hold-time-multiplier",
-              "concepts/bonding-curve",
-              "concepts/graduation"
-            ]
-          },
-          {
-            "group": "Guides",
-            "pages": [
-              "guides/launch-a-token",
-              "guides/buying-and-selling",
-              "guides/claiming-rewards",
-              "guides/portfolio"
-            ]
-          },
-          {
-            "group": "Infrastructure",
-            "pages": [
-              "infrastructure/architecture",
-              "infrastructure/crank-service",
-              "infrastructure/contract-addresses"
-            ]
-          }
-        ]
+        "label": "Launch App",
+        "href": "https://splt.fun"
       }
-    ]
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Launch Token",
+      "href": "https://splt.fun/launch"
+    }
   },
+  "sidebar": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "introduction/what-is-split",
+        "introduction/why-split",
+        "introduction/quickstart"
+      ]
+    },
+    {
+      "group": "Core Concepts",
+      "pages": [
+        "concepts/fee-distribution",
+        "concepts/hold-time-multiplier",
+        "concepts/bonding-curve",
+        "concepts/graduation"
+      ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "guides/launch-a-token",
+        "guides/buying-and-selling",
+        "guides/claiming-rewards",
+        "guides/portfolio"
+      ]
+    },
+    {
+      "group": "Infrastructure",
+      "pages": [
+        "infrastructure/architecture",
+        "infrastructure/crank-service",
+        "infrastructure/contract-addresses"
+      ]
+    }
+  ],
   "footer": {
     "socials": {
       "x": "https://x.com/splitprotocol",

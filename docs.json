@@ -35,6 +35,7 @@
     "enabled": false
   },
   "navigation": {
+    "groups": [],
     "tabs": [
       {
         "tab": "Documentation",

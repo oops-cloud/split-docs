@@ -43,8 +43,7 @@
             "group": "Getting Started",
             "pages": [
               "introduction/what-is-split",
-              "introduction/why-split",
-              "introduction/quickstart"
+              "introduction/why-split"
             ]
           },
           {
